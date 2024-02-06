@@ -16,23 +16,23 @@ public class Main {
 
     private static final int LIMIT = 100;
 
-    private static int getSumOfSquares(int limit) {
+    private static int getSumOfSquares() {
         return IntStream
-                .rangeClosed(1, limit)
+                .rangeClosed(1, Main.LIMIT)
                 .map(n -> n * n)
                 .sum();
     }
 
-    private static int getSquareOfTheSum(int limit) {
+    private static int getSquareOfTheSum() {
         int sum = IntStream
-                .rangeClosed(1, limit)
+                .rangeClosed(1, Main.LIMIT)
                 .sum();
         return sum * sum;
     }
 
     public static void main(String[] args) {
 
-        int difference = getSquareOfTheSum(LIMIT) - getSumOfSquares(LIMIT);
+        int difference = getSquareOfTheSum() - getSumOfSquares();
 
         System.out.println("Answer: " + difference);
 
