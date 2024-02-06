@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 public class Main {
 
     public static int[] specifiedMultiples = {3, 5};
-    public static int lowerLimit = 0;
+    public static int lowerLimit = 1;
     public static int upperLimit = 1000;
 
     public static void main(String[] args) {
